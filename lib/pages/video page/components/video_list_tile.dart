@@ -17,11 +17,19 @@ class VideoListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    String title = videoProviderTrue.videoList[index].title;
+    String subTitle = videoProviderTrue.videoList[index].subtitle;
+    String des = videoProviderTrue.videoList[index].description;
+    String thumb = videoProviderTrue.videoList[index].thumb;
+    String url = videoProviderTrue.videoList[index].sources[0];
+
     return Column(
       children: [
         CupertinoButton(
           // navigate to detail page
           onPressed: () {
+            videoProviderTrue.setVideoPlayer(url);
             Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(index: index),));
           },
           padding: EdgeInsets.zero,

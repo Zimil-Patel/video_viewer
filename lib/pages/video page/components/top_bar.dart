@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:video_player/video_player.dart';
+import 'package:video_viewer/provider/video_provider.dart';
 
 class TopBar extends StatelessWidget {
   const TopBar({
@@ -14,6 +17,7 @@ class TopBar extends StatelessWidget {
           child: GestureDetector(
             // Go back to home page
             onTap: () {
+              Provider.of<VideoProvider>(context, listen: false).chewieController.pause();
               Navigator.pop(context);
             },
             child: const Icon(
