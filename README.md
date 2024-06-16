@@ -37,3 +37,19 @@ The `video_player` package is a low-level video player for Flutter. It provides 
 - **Playback Speed**: Allows adjusting the playback speed of the video.
 - **Video Quality**: Supports different video qualities and resolutions.
 
+## App Screenshots
+
+<div align="left">
+  
+<img src= "https://github.com/Zimil-Patel/video_viewer/blob/master/snaps/img1-portrait.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/video_viewer/blob/master/snaps/img2-portrait.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/video_viewer/blob/master/snaps/img2-portrait.png" height = 510 width = 240>
+
+<img src= "https://github.com/Zimil-Patel/video_viewer/blob/master/snaps/img4-portrait.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/video_viewer/blob/master/snaps/img5-portrait.png" height = 510 width = 240>
+
+
+</div>
+
+
+## Video Preview 🎥
+
+
+https://github.com/Zimil-Patel/apple_music/assets/112332000/33f7135e-5cf4-4989-98b5-c3a034e89b45
