@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:video_viewer/utils/constants.dart';
 import 'package:video_viewer/utils/frequently_used_list.dart';
 
-
 class FrequentlyUsedList extends StatelessWidget {
   const FrequentlyUsedList({
     super.key,
@@ -18,7 +17,7 @@ class FrequentlyUsedList extends StatelessWidget {
           children: [
             Padding(
               padding:
-              const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12),
+                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12),
               child: Text(
                 'Frequently Used',
                 style: Theme.of(context)
@@ -46,7 +45,7 @@ class FrequentlyUsedList extends StatelessWidget {
             children: [
               ...List.generate(
                 frequentlyUsedList.length,
-                    (index) => FrequentlyUsedTile(index: index),
+                (index) => FrequentlyUsedTile(index: index),
               ),
             ],
           ),
@@ -58,7 +57,8 @@ class FrequentlyUsedList extends StatelessWidget {
 
 class FrequentlyUsedTile extends StatelessWidget {
   const FrequentlyUsedTile({
-    super.key, required this.index,
+    super.key,
+    required this.index,
   });
 
   final int index;
@@ -66,28 +66,28 @@ class FrequentlyUsedTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoButton(
-                      child: Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      ListTile(
-        leading: Icon(
-          CupertinoIcons.folder_fill,
-          size: height * 0.05,
-          color: frequentlyUsedList[index].color,
-        ),
-        title: Text(frequentlyUsedList[index].lable),
-        trailing: const Icon(Icons.more_horiz_rounded),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ListTile(
+            leading: Icon(
+              CupertinoIcons.folder_fill,
+              size: height * 0.05,
+              color: frequentlyUsedList[index].color,
+            ),
+            title: Text(frequentlyUsedList[index].lable),
+            trailing: const Icon(Icons.more_horiz_rounded),
+          ),
+          if (index != frequentlyUsedList.length - 1)
+            Divider(
+              color: Theme.of(context).scaffoldBackgroundColor,
+              indent: width * 0.2,
+              thickness: 2,
+              height: 10,
+            ),
+        ],
       ),
-      if (index != frequentlyUsedList.length - 1)
-        Divider(
-          color: Theme.of(context).scaffoldBackgroundColor,
-          indent: width * 0.2,
-          thickness: 2,
-          height: 10,
-        ),
-    ],
-                      ),
-                      onPressed: () {},
-                    );
+      onPressed: () {},
+    );
   }
 }

@@ -12,8 +12,8 @@ class AnimatedSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MainProvider mainProviderTrue = Provider.of(context, listen: true);
-    MainProvider mainProviderFalse = Provider.of(context, listen: false);
+    MainProvider mainProviderTrue = Provider.of<MainProvider>(context, listen: true);
+    MainProvider mainProviderFalse = Provider.of<MainProvider>(context, listen: false);
 
     return Visibility(
       visible: mainProviderTrue.isSearchBarVisible,
@@ -71,8 +71,8 @@ class SearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
-      tween: Tween<double>(begin: 10, end: width / 1.2),
-      duration: const Duration(milliseconds: 200),
+      tween: Tween<double>(begin: width / 3, end: width / 1.2),
+      duration: const Duration(milliseconds: 300),
       builder: (context, value, child) => SizedBox(
         width: value,
         child: TextField(

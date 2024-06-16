@@ -14,4 +14,8 @@ class VideoProvider extends ChangeNotifier{
     _videoList = jsonVideoList.map((e) => VideoModel.fromJson(e)).toList();
   }
 
+  VideoProvider(){
+    convertData();
+  }
+
 }

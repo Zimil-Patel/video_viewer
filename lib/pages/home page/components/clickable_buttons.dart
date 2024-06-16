@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:video_viewer/pages/video%20page/video_page.dart';
 import 'package:video_viewer/utils/constants.dart';
 
 
@@ -89,7 +90,10 @@ class VideoButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: CupertinoButton(
-        onPressed: (){},
+        // navigate to song page
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const VideoPage(),));
+        },
         padding: EdgeInsets.zero,
         child: Container(
           margin: const EdgeInsets.all(12),

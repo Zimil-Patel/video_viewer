@@ -27,6 +27,7 @@ class VideoViewerApp extends StatelessWidget {
           colorScheme: const ColorScheme.dark(
             brightness: Brightness.dark,
             surface: Color(0xff1f2030),
+            onSecondary: Color(0xff2e2f44),
           ),
           textTheme: TextTheme(
             titleLarge: GoogleFonts.varelaRound(),

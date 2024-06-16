@@ -14,8 +14,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MainProvider mainProviderTrue = Provider.of(context, listen: true);
-    MainProvider mainProviderFalse = Provider.of(context, listen: false);
+    MainProvider mainProviderTrue = Provider.of<MainProvider>(context, listen: true);
+    MainProvider mainProviderFalse = Provider.of<MainProvider>(context, listen: false);
 
     return Scaffold(
       // app bar
