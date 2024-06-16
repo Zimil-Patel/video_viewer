@@ -1,5 +1,7 @@
 # Video App Git Documentation
 
+## LinkedIn => https://www.linkedin.com/posts/zimil-patel_flutter-appdevelopment-videoapp-activity-7208129713620295680-hK4e?utm_source=share&utm_medium=member_desktop
+
 This repository contains a Flutter video app that allows users to play videos, including full-screen playback. The app leverages several packages for various functionalities, detailed below.
 
 ## Packages Used
