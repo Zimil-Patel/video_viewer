@@ -1,7 +1,5 @@
 # Video App Git Documentation
 
-## LinkedIn => https://www.linkedin.com/posts/zimil-patel_flutter-appdevelopment-videoapp-activity-7208129713620295680-hK4e?utm_source=share&utm_medium=member_desktop
-
 This repository contains a Flutter video app that allows users to play videos, including full-screen playback. The app leverages several packages for various functionalities, detailed below.
 
 ## Packages Used
@@ -39,6 +37,8 @@ The `video_player` package is a low-level video player for Flutter. It provides 
 - **Playback Speed**: Allows adjusting the playback speed of the video.
 - **Video Quality**: Supports different video qualities and resolutions.
 
+👉 LinkedIn (https://www.linkedin.com/posts/zimil-patel_flutter-appdevelopment-videoapp-activity-7208129713620295680-hK4e?utm_source=share&utm_medium=member_desktop)
+
 ## App Screenshots
 
 <div align="left">
@@ -52,7 +52,6 @@ The `video_player` package is a low-level video player for Flutter. It provides 
 
 
 ## Video Preview 🎥
-
 
 https://github.com/Zimil-Patel/video_viewer/assets/112332000/784b76c6-1190-46bb-a373-b9dd3ef5a993
 
