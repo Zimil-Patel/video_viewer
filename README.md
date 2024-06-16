@@ -52,4 +52,5 @@ The `video_player` package is a low-level video player for Flutter. It provides 
 ## Video Preview 🎥
 
 
-https://github.com/Zimil-Patel/apple_music/assets/112332000/33f7135e-5cf4-4989-98b5-c3a034e89b45
+https://github.com/Zimil-Patel/video_viewer/assets/112332000/784b76c6-1190-46bb-a373-b9dd3ef5a993
+
